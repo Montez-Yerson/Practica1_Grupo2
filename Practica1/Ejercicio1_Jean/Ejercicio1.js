@@ -8,7 +8,7 @@ muestra la categoría correspondiente según el IMC (bajo peso, normal, sobrepes
 let peso = parseFloat(prompt("¿Cúanto es tu peso en kilogramos(kg)?: "));
 let altura = parseFloat(prompt("¿Cúanto es tu altura en metros(m)?: "));
 let imc = peso / (altura * altura);
-imc= parseFloat(imc.toFixed(2));
+imc= parseFloat(imc.toFixed(1));
 
 if (imc < 18.5){
     alert("Bajo peso con un IMC de: " + imc);
