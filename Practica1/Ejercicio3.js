@@ -16,7 +16,7 @@ const DATOS = {
 };
 
 let importe = parseFloat(readlineSync.question("Importe de la compra: "));
-let tipoIVA = readlineSync.question("Tipo de IVA (basico, reducido, superreducido): ").toLowerCase();
+let tipoIVA = readlineSync.question("Tipo de, IVA (basico, reducido, superreducido): ").toLowerCase();
 
 if (DATOS[tipoIVA] !== undefined) {
     let iva = importe * DATOS[tipoIVA];
